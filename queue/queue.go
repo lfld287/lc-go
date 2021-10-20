@@ -1,4 +1,4 @@
-package tools
+package queue
 
 type(
 	Queue struct {

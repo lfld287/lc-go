@@ -1,6 +1,8 @@
 package leetcode
 
-import "github.com/lfld287/lc-go"
+import (
+	"github.com/lfld287/lc-go/queue"
+)
 
 func networkBecomesIdle(edges [][]int, patience []int) int {
 	serverNum:=len(patience)
@@ -10,5 +12,5 @@ func networkBecomesIdle(edges [][]int, patience []int) int {
 	}
 	//先计算每个数据服务器到主服务器的最短路径
 	//长度一样，广度优先就行
-
+	queue.New()
 }
