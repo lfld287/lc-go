@@ -14,12 +14,12 @@ func minMoves(nums []int) int {
 		}
 	}
 	//其实就是选一个最大的数减1，直到全减到和最小的一样
-	count:=0
-	for idx:=range nums{
-		if idx==minIdx{
+	count := 0
+	for idx := range nums {
+		if idx == minIdx {
 			continue
 		}
-		count+=nums[idx]-nums[minIdx]
+		count += nums[idx] - nums[minIdx]
 	}
 	return count
 }

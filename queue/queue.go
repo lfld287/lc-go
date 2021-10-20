@@ -1,19 +1,19 @@
 package queue
 
-type(
+type (
 	Queue struct {
-		top *node
-		rear *node
+		top    *node
+		rear   *node
 		length int
 	}
 	node struct {
-		pre *node
-		next *node
+		pre   *node
+		next  *node
 		value interface{}
 	}
 )
 
-func New() *Queue{
+func New() *Queue {
 	return &Queue{
 		top:    nil,
 		rear:   nil,
@@ -25,8 +25,8 @@ func (p *Queue) len() int {
 	return p.length
 }
 
-func (p *Queue) Any() bool {
-	return p.length > 0
+func (p *Queue) IsEmpty() bool {
+	return p.length <= 0
 }
 
 func (p *Queue) Peek() interface{} {
