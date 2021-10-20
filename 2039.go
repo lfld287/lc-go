@@ -1,5 +1,6 @@
 package leetcode
 
+import "github.com/lfld287/lc-go"
 
 func networkBecomesIdle(edges [][]int, patience []int) int {
 	serverNum:=len(patience)
