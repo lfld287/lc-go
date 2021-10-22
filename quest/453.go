@@ -1,4 +1,4 @@
-package leetcode
+package quest
 
 func minMoves(nums []int) int {
 	//min == max
