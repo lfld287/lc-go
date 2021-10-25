@@ -1,9 +1,7 @@
 package quest
 
 import (
-	"bufio"
 	"fmt"
-	"os"
 )
 
 
