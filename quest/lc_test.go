@@ -1,6 +1,9 @@
 package quest
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func Test492(t *testing.T){
 	constructRectangle(9999998)
@@ -13,4 +16,10 @@ func Test240(t *testing.T){
 	}
 	searchMatrix(data,
 	20)
+}
+
+func Test301(t *testing.T){
+	s:="())(((()m)("
+	res:=removeInvalidParentheses(s)
+	fmt.Println(res)
 }
