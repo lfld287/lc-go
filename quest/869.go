@@ -16,4 +16,6 @@ func reorderedPowerOf2(n int) bool {
 	if valid{
 		return true
 	}
+	//NOT COMPLETE
+	return false
 }
