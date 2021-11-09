@@ -36,3 +36,17 @@ func Test1218(t *testing.T){
 	res:=longestSubsequence(data,0)
 	fmt.Println(res)
 }
+
+func Test488(t *testing.T){
+	data:="WWBBWBBWW"
+	hand:=		"BB"
+	res:=findMinStep(data,hand)
+	fmt.Println(res)
+
+	A:=[]int{1,2,3,4,5}
+	B:=make([]int,5)
+	copy(B,A)
+	A[0]+=3
+	fmt.Println(A)
+	fmt.Println(B)
+}
